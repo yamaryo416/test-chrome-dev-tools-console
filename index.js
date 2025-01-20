@@ -1,7 +1,6 @@
 function log(message) {
   console.log(message);
   const output = document.getElementById('output');
-  output.innerHTML += message + '<br>';
 }
 
 function mainFunction() {
@@ -33,6 +32,5 @@ function nestedFunction() {
 
 document.getElementById('startButton').addEventListener('click', function() {
   document.getElementById('output').innerHTML = ''; // Clear previous output
-  debugger;
   mainFunction();
 });
